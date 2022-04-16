@@ -26,9 +26,11 @@ class con1 extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Image(
-                      image: AssetImage('assets/logos/education.png'),
-                      height: 67,
+                    Center(
+                      child: Image(
+                        image: AssetImage('assets/logos/education.png'),
+                        height: 67,
+                      ),
                     ),
                     buildButton1(),
                     buildButton2(),

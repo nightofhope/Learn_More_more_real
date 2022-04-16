@@ -11,6 +11,8 @@ import 'package:learn_more_more/screens/couse/m.5/sci5phy.dart';
 import 'package:learn_more_more/screens/couse/m.6/sci6phy.dart';
 import 'package:learn_more_more/success/drawer.dart';
 
+import '../../seach.dart';
+
 class newphy extends StatelessWidget {
   const newphy({Key? key}) : super(key: key);
 
@@ -18,7 +20,14 @@ class newphy extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ฟิสิกส์"),
+        title: Text("ค้นหารายวิชา"),
+        actions: [
+          IconButton(
+              onPressed: () {
+                showSearch(context: context, delegate: DataSeach());
+              },
+              icon: Icon(Icons.search))
+        ],
       ),
       body: Container(
           color: Colors.green[50],

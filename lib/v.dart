@@ -11,7 +11,7 @@ class AssetPlayerWidget extends StatefulWidget {
 }
 
 class _AssetPlayerWidgetState extends State<AssetPlayerWidget> {
-  final asset = 'assets/logos/video/phy1.MP4';
+  final asset = 'assets/logos/video/v.mp4';
   late VideoPlayerController videoPlayerController;
   late ChewieController chewieController;
 
